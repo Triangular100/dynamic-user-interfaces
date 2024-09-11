@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic User Interfaces</title>
+  </head>
+  <body>
+
+    <header>
+      <h1 class="title"><a href="#">Dynamic User Interfaces</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li id="products-option" class="dropdown"><a href="#Products">Products</a></li>
+          <li id="services-option" class="dropdown"><a href="#Services">Services</a></li>
+          <li><a href="#About">About</a></li>
+        </ul>
+        <ul id="products-nav" class="hide hidden-menu">
+          <li><a href="#P1">Product 1</a></li>
+          <li><a href="#P2">Product 2</a></li>
+          <li><a href="#P3">Product 3</a></li>
+          <li><a href="#P4">Product 4</a></li>
+          <li><a href="#P5">Product 5</a></li>
+        </ul>
+        <ul id="services-nav" class="hide hidden-menu">
+          <li><a href="#S1">Service 1</a></li>
+          <li><a href="#S2">Service 2</a></li>
+          <li><a href="#S3">Service 3</a></li>
+          <li><a href="#S4">Service 4</a></li>
+          <li><a href="#S5">Service 5</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div id="content">
+      <div id="image-carousel">
+        <div id="images">
+          <img src="./img/mountains-1.jpg" class="active" alt="Foggy mountains">
+          <img src="./img/mountains-2.jpg" class="" alt="Snowy mountains">
+          <img src="./img/mountains-3.jpg" class="" alt="Town mountains">
+          <img src="./img/mountains-4.jpg" class="" alt="Field by mountains">
+          <img src="./img/mountains-5.jpg" class="" alt="Forest mountains">
+        </div>
+        <div class="absolute action circle-background arrow" id="prev">&#10094;</div>
+        <div class="absolute action circle-background arrow" id="next">&#10095;</div>
+        <div class="absolute action" id="dots">
+          <div id="0" class="active circle-background dot"></div>
+          <div id="1" class="circle-background dot"></div>
+          <div id="2" class="circle-background dot"></div>
+          <div id="3" class="circle-background dot"></div>
+          <div id="4" class="circle-background dot"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/Triangular100/dynamic-user-interfaces" target="_blank">
+        <img src="img/github.svg" alt="GitHub Repo">
+      </a>
+    </footer>
+  </body>
+</html>
